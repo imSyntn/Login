@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="shortcut icon" href="icons8-login-64.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/015f2e7ce4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <div class="heading">
+                <p>Login</p>
+            </div>
+            <form action="">
+                <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                <input class="empty" id="username" type="text" placeholder="username" required>
+                <i class="fa-solid fa-lock" style="color: #ffffff;"></i>
+                <input class="empty" id="password" type="password" placeholder="password" required>
+                <p class="p-error">Password length must be more than 8</p>
+
+                <input type="checkbox" class="checkbox" name="checki" id="">
+                <p class="rem">Remember me</p>
+
+                <button class="log" onclick="login()" type="submit">Login</button>
+
+                <p class="other">Or login using</p>
+
+                <div class="f-g">
+                    <button class="google other-log"><i class="fa-brands fa-google fa-xl"></i></button>
+                    <button class="facebook other-log"><i class="fa-brands fa-facebook fa-2xl"></i></button>
+                </div>
+                
+                <a href="#" class="for">forgot password ?</a>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
